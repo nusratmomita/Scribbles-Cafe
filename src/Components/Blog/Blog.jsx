@@ -1,7 +1,7 @@
 import React from 'react';
 import { IoBookmarksSharp } from "react-icons/io5";
 
-const Blog = ({blog , handleBookmarkAction}) => {
+const Blog = ({blog , handleBookmarkAction , handleReadNowButton}) => {
     // console.log(blog)
     return (
         <div>
@@ -25,7 +25,7 @@ const Blog = ({blog , handleBookmarkAction}) => {
                     </div>
                     <div className="card-actions justify-end">
                     <div className='mt-4 grid grid-cols-2 gap-40 justify-end'>
-                        <button className="btn btn-primary -ml-5 font-bold">Read Now</button>
+                        <button onClick={() => handleReadNowButton(blog.reading_time)} className="btn btn-primary -ml-5 font-bold">Read Now</button>
                         <div className='mt-3 ml-10'>
                             <button onClick = {() => handleBookmarkAction(blog)} className='cursor-pointer'> <IoBookmarksSharp size={25}/></button>
                         </div>
