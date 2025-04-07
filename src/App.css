@@ -2,5 +2,6 @@
 @plugin "daisyui";
 
 :root{
-    background-color: rgb(45, 65, 83);
+    background: linear-gradient(to left, #3a302e00, #462e1b);
+
 }

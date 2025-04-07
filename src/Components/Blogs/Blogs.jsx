@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
 
-const Blogs = ({ handleBookmarkAction , handleReadNowButton }) => {
+const Blogs = ({ handleBookmarkAction , handleReadNowButton , handleRemoveBookmark }) => {
 
     // setting the blogs.json API to a variable and using useState to set the blogs state
     const [blogs , setBlogs] = useState([])
@@ -23,6 +23,7 @@ const Blogs = ({ handleBookmarkAction , handleReadNowButton }) => {
                 blogs.map((blog) => <Blog 
                     handleBookmarkAction={handleBookmarkAction} 
                     handleReadNowButton={handleReadNowButton}
+                    handleRemoveBookmark={handleRemoveBookmark}
                     blog={blog}
                     key={blog.id}>     
                 </Blog>)
