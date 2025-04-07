@@ -46,6 +46,7 @@ function App() {
         }
       </div>
      </div>
+     <h2 className='text-center text-2xl font-medium'>May the oppressors suffer <span className='text-red-600'>10 times </span>more than the oppressed ones!</h2>
     </>
   )
 }
